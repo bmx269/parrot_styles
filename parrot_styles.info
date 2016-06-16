@@ -1,0 +1,7 @@
+name = Parrot Styles
+description = "Change many of the styles of Panels panes"
+dependencies[] = panels
+dependencies[] = ctools
+package = Parrot
+core = 7.x
+version = "7.x-1.0"
