@@ -10,14 +10,14 @@ $plugin = array(
     'render region'      => 'parrot_styles_render_region',
     'settings form'      => 'parrot_styles_region_settings_form',
 
-    'css'                => '../../../css/styles.css',
+    'css'                => '../../../theme/css/styles.css',
 
     'hook theme'         => array(
       'parrot_styles_theme_pane' => array(
         'template'  => 'parrot_styles-pane',
 
         // Change theme name 'parrot' to match changed theme name.
-        'path'      => drupal_get_path('theme', 'twu') . '/plugins/styles/parrot_styles',
+        'path'      => drupal_get_path('module', 'parrot_styles') . '/plugins/styles/parrot_styles',
         'variables' => array(
           'content'  => NULL,
           'settings' => NULL,

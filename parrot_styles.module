@@ -7,3 +7,10 @@ function parrot_styles_ctools_plugin_directory($module, $plugin) {
     return 'plugins/' . $plugin;
   }
 }
+
+function parrot_styles_preprocess_page(&$vars,$hook) {
+  drupal_add_js(drupal_get_path('module', 'parrot_styles') .'/theme/js/jquery.waypoints.min.js', 'file');
+  drupal_add_js(drupal_get_path('module', 'parrot_styles') .'/theme/js/script.js', 'file');
+  drupal_add_css(drupal_get_path('module', 'parrot_styles') .'/theme/css/animate.css', 'file');
+  drupal_add_css(drupal_get_path('module', 'parrot_styles') .'/theme/css/style.css', 'file');
+}
